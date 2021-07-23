@@ -168,12 +168,11 @@ def zodiac():
         list.append("Pisces")
     return list 
 
-def first_story():
+def first_part():
     print("""
     You wake to find yourself in a desolate wasteland.
     """)
     time.sleep(1.5)
-    print()
     print("""
     The sky above you is an angry sooty crimson, 
     casting a red haze everywhere that meets the 
@@ -185,7 +184,6 @@ def first_story():
     realize there is no sun in the sky.
     """)
     time.sleep(8)
-    print()
     print(
     """
     The harsh winds that tear at your face smell of 
@@ -193,7 +191,6 @@ def first_story():
     of inumerable agonized screams
     """)
     time.sleep(5)
-    print()
     print(
     """
     The sound of large leathery wings flapping in the 
@@ -207,7 +204,6 @@ def first_story():
     wings that are folding themselves away. 
     """)
     time.sleep(8)
-    print()
     print(
     f"""
     “Welcome to Erebus, {name}. In case it escaped your 
@@ -238,5 +234,5 @@ def run_game():
     get_user_data()
     print()
     time.sleep(1)
-    first_story()
+    first_part()
 run_game()
