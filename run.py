@@ -1,8 +1,9 @@
 # python code goes here
 import time
 from datetime import datetime
-
 player_details = []
+
+
 def intro():
     """
     Simple game intro that uses sleep function to slow down the print statements. The intro fucntion 
@@ -156,15 +157,42 @@ def zodiac():
     return list      
 
 def first_story():
-    print()
     print("You wake to find yourself in a desolate wasteland.")
-    time.sleep(1)
+    time.sleep(1.5)
     print()
-    print("The sky above you is a sooty crimson, but strangely enough the heat comes from the earth, you cannot locate the source of evil light that fills the world around you.")
-    time.sleep(1)
+    print("""The sky above you is an angry sooty crimson, casting a red haze 
+    everywhere \nthat meets the eye, but strangely enough the unbearable heat 
+    that feels like its slowly roasting you alive comes not from the sky but 
+    from the ground beneath you, you cannot locate the source of evil light 
+    that fills the world around you.. Startled, you realize there is no sun in 
+    the sky.
+    """)
+    time.sleep(5)
     print()
-    print("The harsh winds that tear at your face smell of sulfur and decaying flesh, the sounds of inumerable agonized screams fill your head")
-
+    print("""The harsh winds that tear at your face smell of sulfur and 
+    decaying flesh, they carry the sounds of inumerable agonized screams""")
+    time.sleep(3)
+    print()
+    print("""The sound of large leathery wings flapping in the distance sends a
+     frightful shiver down your spine. A large thud sounds behind you. You turn
+     and find yourself face to face with none other than Nicholas Cage himself. 
+     Wearing a nicely tailored three piece suit, he surveys you with cool 
+     indifference, his glittering malevolent eyes the only that gives away his 
+     true nature. That and the two large batlike wings that are folding 
+     themselves away. 
+    """)
+    time.sleep(5)
+    print()
+    print("""“Welcome to Erebus, {name}. In case it escaped your notice, 
+    I’m happy to inform you that you are dead” he says, his mouth curling up in
+    amusement. 
+    He continued “I am Allecto, and my job is to punish you for the sins you 
+    committed in the {age} years you roamed the mortal plane. Your offenses are
+     numerous, chief among them, the lies you spoke, those crocs you wore once
+      when you thought no one was looking, the animals that suffered for your 
+      nourishment, that candy bar you stole in third grade…. ”
+ 
+    """)
 def get_user_data():
     get_name()
     print()
@@ -176,5 +204,7 @@ def run_game():
     time.sleep(2)
     print()
     get_user_data()
+    print()
+    time.sleep(1)
     first_story()
 run_game()
