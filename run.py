@@ -73,13 +73,14 @@ def intro():
 def get_name(): 
     while True:
         global name 
-        name = input("What's your name?:\n")
-        time.sleep(2)
+        player_name = input("What's your name?:\n")
+        name = player_name.capitalize() 
         print()
         if name == "":
             print("Please enter a name to continue")
             continue
         else: 
+            time.sleep(2)
             print(f"Welcome to Hellscape: Path of Maat, {name}!")
             break
         print()
@@ -183,7 +184,7 @@ def first_story():
     that fills the world around you.. Startled, you 
     realize there is no sun in the sky.
     """)
-    time.sleep(5)
+    time.sleep(8)
     print()
     print(
     """
@@ -191,7 +192,7 @@ def first_story():
     sulfur and decaying flesh, they carry the sounds 
     of inumerable agonized screams
     """)
-    time.sleep(3)
+    time.sleep(5)
     print()
     print(
     """
@@ -205,7 +206,7 @@ def first_story():
     away his true nature. That and the two large batlike 
     wings that are folding themselves away. 
     """)
-    time.sleep(5)
+    time.sleep(8)
     print()
     print(
     f"""
@@ -227,6 +228,7 @@ def get_user_data():
     zodiac()
     print()
     print(f"Thank you {name}, have fun!\n")
+    time.sleep(2)
 
 
 def run_game():
