@@ -70,7 +70,7 @@ def intro():
     time.sleep(0.1) 
     print("█𓂀█☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥█𓂀█")                                  
 
-def end_game():
+def game_over():
     print(" 💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀")
     time.sleep(0.1) 
     print("💀                                                         💀")
@@ -202,20 +202,33 @@ def zodiac():
     elif int(month) == 2 and int(day) >= 19:
         list.append("Pisces")
     return list 
-def game_over():
+
+def restart_game():
     print()
     while True:
         print("Answer Y or N")
-        restart_choice = input("Would you like to try again? Y/N")
-        if restart_choice == "Y":
+        restart_choice = input("Would you like to try again? Y/N\n")
+        restart = restart_choice.upper()
+        if restart == "Y":
+            a = [ "3", "2", "1"]
+            print("The game will begin in 3 seconds...")
+            for i in a:
+                time.sleep(0.5)
+                print(i)
+                time.sleep(0.75)
+                continue
             run_game()
-        elif restart_choice == "N":
+        elif restart == "N":
             print(
             """
             Thank you so much for playing!
             """)
-            end_game()
+            game_over()
             break
+        else:
+            print("I don't understand!")
+            continue
+            
 
 
 
@@ -361,7 +374,7 @@ def first_part():
             But you find nothing but despair!!
             """)
             time.sleep(3)
-            #game_over()
+            restart_game()
             break
         elif first_choice_upper == "A": 
             break
