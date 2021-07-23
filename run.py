@@ -6,8 +6,8 @@ player_details = []
 
 def intro():
     """
-    Simple game intro that uses sleep function to slow down the print statements. The intro fucntion 
-    also requests user name and date of birth!
+    Simple game intro that uses sleep function to slow down the print\n 
+    statements. The intro function also requests user name and date of birth!
     """
 
     print("█𓂀█☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥█𓂀█")
@@ -70,12 +70,18 @@ def intro():
     time.sleep(0.1) 
     print("█𓂀█☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥████☥█𓂀█")                                   
     
-def get_name():  
-    name = input("What's your name?:")
-    time.sleep(2)
-    print()
-    print(f"Welcome to Hellscape: Path of Maat, {name}!")
-    return name
+def get_name(): 
+    while True:
+        global name 
+        name = input("What's your name?:\n")
+        time.sleep(2)
+        if name == "":
+            print("Please enter a name to continue")
+            continue
+        else: 
+            print(f"Welcome to Hellscape: Path of Maat, {name}!")
+            break
+        print()
 
 def get_dob():
     """
@@ -85,9 +91,10 @@ def get_dob():
     time.sleep(1)
     print()
     while True:
-        dob = input("Whats your date of birth?")
+        global dob
+        dob = input("Whats your date of birth?\n")
         if len(dob) == 8 and dob.isnumeric() == True:
-            return dob
+            print("Thank you, have fun!\n")
             break
         else: 
             print()
@@ -101,8 +108,8 @@ def get_dob():
             continue
     
 def zodiac():
+
     list = []
-    dob = get_dob()
     day = dob[0:2]
     month = dob[2:4]
     year = dob[4:]
@@ -157,47 +164,65 @@ def zodiac():
     return list      
 
 def first_story():
-    print("You wake to find yourself in a desolate wasteland.")
+    print("""
+    You wake to find yourself in a desolate wasteland.
+    """)
     time.sleep(1.5)
     print()
-    print("""The sky above you is an angry sooty crimson, casting a red haze 
-    everywhere \nthat meets the eye, but strangely enough the unbearable heat 
-    that feels like its slowly roasting you alive comes not from the sky but 
-    from the ground beneath you, you cannot locate the source of evil light 
-    that fills the world around you.. Startled, you realize there is no sun in 
-    the sky.
+    print("""
+    The sky above you is an angry sooty crimson, 
+    casting a red haze everywhere that meets the 
+    eye, but strangely enough the unbearable heat
+    that feels like its slowly roasting you alive 
+    comes not from the sky but from the ground beneath 
+    you, you cannot locate the source of evil light         
+    that fills the world around you.. Startled, you 
+    realize there is no sun in the sky.
     """)
     time.sleep(5)
     print()
-    print("""The harsh winds that tear at your face smell of sulfur and 
-    decaying flesh, they carry the sounds of inumerable agonized screams""")
+    print(
+    """
+    The harsh winds that tear at your face smell of 
+    sulfur and decaying flesh, they carry the sounds 
+    of inumerable agonized screams
+    """)
     time.sleep(3)
     print()
-    print("""The sound of large leathery wings flapping in the distance sends a
-     frightful shiver down your spine. A large thud sounds behind you. You turn
-     and find yourself face to face with none other than Nicholas Cage himself. 
-     Wearing a nicely tailored three piece suit, he surveys you with cool 
-     indifference, his glittering malevolent eyes the only that gives away his 
-     true nature. That and the two large batlike wings that are folding 
-     themselves away. 
+    print(
+    """
+    The sound of large leathery wings flapping in the 
+    distance sends a frightful shiver down your spine. 
+    A large thud sounds behind you. You turn and find 
+    yourself face to face with none other than 
+    Nicholas Cage himself. Wearing a nicely tailored 
+    three piece suit, he surveys you with cool indifference, 
+    his glittering malevolent eyes the only that gives 
+    away his true nature. That and the two large batlike 
+    wings that are folding themselves away. 
     """)
     time.sleep(5)
     print()
-    print("""“Welcome to Erebus, {name}. In case it escaped your notice, 
-    I’m happy to inform you that you are dead” he says, his mouth curling up in
-    amusement. 
-    He continued “I am Allecto, and my job is to punish you for the sins you 
-    committed in the {age} years you roamed the mortal plane. Your offenses are
-     numerous, chief among them, the lies you spoke, those crocs you wore once
-      when you thought no one was looking, the animals that suffered for your 
-      nourishment, that candy bar you stole in third grade…. ”
- 
+    print(
+    f"""
+    “Welcome to Erebus, {name}. In case it escaped your 
+    notice, I’m happy to inform you that you are dead” 
+    he says, his mouth curling up in amusement. He continued 
+    “I am Allecto, and my job is to punish you for the sins 
+    you committed in the {age} years you roamed the mortal 
+    plane. Your offenses are numerous, chief among them, 
+    the lies you spoke, those crocs you wore once
+    when you thought no one was looking, the animals that 
+    suffered for your nourishment, that candy bar you stole 
+    in third grade…. ”
     """)
 def get_user_data():
     get_name()
     print()
     time.sleep(2)
+    get_dob()
     zodiac()
+
 
 def run_game():
     intro()
