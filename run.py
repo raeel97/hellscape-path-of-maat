@@ -75,6 +75,7 @@ def get_name():
         global name 
         name = input("What's your name?:\n")
         time.sleep(2)
+        print()
         if name == "":
             print("Please enter a name to continue")
             continue
@@ -91,10 +92,9 @@ def get_dob():
     time.sleep(1)
     print()
     while True:
-        global dob
         dob = input("Whats your date of birth?\n")
         if len(dob) == 8 and dob.isnumeric() == True:
-            print("Thank you, have fun!\n")
+            return dob
             break
         else: 
             print()
@@ -106,13 +106,17 @@ def get_dob():
             time.sleep(2)
             print()
             continue
-    
 def zodiac():
-
+    global age
+    dob = get_dob()
     list = []
+    now = datetime.now()
+    now_string = str(now)
+    current_year = int(now_string[0:4])
     day = dob[0:2]
     month = dob[2:4]
     year = dob[4:]
+    age = current_year - int(year)
     if int(month) == 3 and int(day) <= 20:
         list.append("Pisces")
     elif int(month) == 3 and int(day) > 20:
@@ -161,7 +165,7 @@ def zodiac():
         list.append("Aquarius")
     elif int(month) == 2 and int(day) >= 19:
         list.append("Pisces")
-    return list      
+    return list 
 
 def first_story():
     print("""
@@ -220,8 +224,9 @@ def get_user_data():
     get_name()
     print()
     time.sleep(2)
-    get_dob()
     zodiac()
+    print()
+    print(f"Thank you {name}, have fun!\n")
 
 
 def run_game():
