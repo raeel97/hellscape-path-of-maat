@@ -217,6 +217,109 @@ def first_part():
     suffered for your nourishment, that candy bar you stole 
     in third grade…. ”
     """)
+    time.sleep(8)
+    print(
+    """
+    A bubble of panic forms in your chest, this is it, the 
+    moment every human being fears deep deep down. The reckoning 
+    of all your mistakes. You think of your loved ones, you’ll 
+    never see them again. You have so many regrets..... 
+    """)
+    time.sleep(5)
+    print(
+    """
+    Allecto interrupts your panicked thoughts “Usually my job 
+    is to escort you to the dungeons of Erebus, located in Tartarus, 
+    however, I am presented with a dilemma. Most mortals that end 
+    up here have sufficiently blackened their souls to the point 
+    where redemption is impossible, your soul however, as mediocre 
+    as the mortal thats attached to it, is salvageable.”
+    """)
+    time.sleep(5)
+    print(
+    """
+    The bubble of panic in your chest is quickly replaced by a bubble of hope!
+    """)
+    time.sleep(3)
+    print(
+    f"""
+    “You have a choice before you {name}, you can either spend an 
+    eternity wandering the endless fields of despair, a punishment 
+    created for the meek and unremarkable, or you can choose the path 
+    of the goddess Maát and stand a chance of redeeming yourself-”
+    """)
+    time.sleep(6)
+    print(
+    """
+    Emboldened by the prospect of a positive outcome, you interrupt 
+    and ask “What would the path of Maat entail? And also, why do you 
+    look like Nicholas Cage?”
+    """)
+    time.sleep(3)
+    print(
+    """
+    “SILENCE, MORTAL! I did not give you leave to speak!” Allecto snaps! 
+    The ground rumbles beneath his displeasure, red lightning crackles 
+    in the distance.
+    """)
+    time.sleep(5)
+    print(
+    """
+    Straightening a hair that had fallen out of place, Allecto calmly 
+    continues “Firstly, I don't look like Nicholas Cage, he looks like me!
+    Second and most importantly, the path of Maat is not an easy path. 
+    You will be challenged and tested! If you fail any of the challenges, 
+    you will subjected to realities of unbridled suffering that 
+    you cannot even begin to imagine”
+    """)
+    time.sleep(8)
+    print(
+    """
+    “The time for talking has come to an end! You must now choose!”
+    """)
+    time.sleep(3)
+    print(
+    """
+    “Will you walk the path of Maat or do you choose the fields of despair?”
+    """)
+    time.sleep(3)
+    
+    while True:
+        print("Answer A for the Path of Maat or B for the Fields of Despair")
+        first_choice = input("I choose:\n")
+        first_choice_upper = first_choice.upper()
+        if first_choice_upper == "B":
+            print(
+            """
+            Allecto smiles maliciously at your choice. “You mortals 
+            are so weak” he laughs, he then snaps his fingers and 
+            everything goes black....
+            """)
+            time.sleep(6)
+            print("""
+            You wake to find yourself in a endless grass field.\n
+            Everywhere you look, you are greeted by silent emptiness.
+            """)
+            time.sleep(3)
+            print("""
+            You scream but you cannot hear the sound of your own voice!!
+            """)
+            time.sleep(3)
+            print("""
+            You aimlessly wander, looking for something, anything!!
+            But you find nothing but despair!!
+            """)
+            time.sleep(3)
+            #game_over()
+            break
+        elif first_choice_upper == "A": 
+            break
+        else:
+            print()
+            print("Allecto doesn't understand you choice, do not anger him!")
+            time.sleep(6)
+            print()
+            continue
 def get_user_data():
     get_name()
     print()
