@@ -204,6 +204,7 @@ def zodiac():
     return list 
 
 def restart_game():
+    game_over()
     print()
     while True:
         print("Answer Y or N")
@@ -223,10 +224,12 @@ def restart_game():
             """
             Thank you so much for playing!
             """)
-            game_over()
             break
         else:
+            print()
             print("I don't understand!")
+            time.sleep(1)
+            print()
             continue
             
 
@@ -384,7 +387,8 @@ def first_part():
             time.sleep(6)
             print()
             continue
-
+def sphinx_part():
+    
 def get_user_data():
     get_name()
     print()
@@ -403,5 +407,5 @@ def run_game():
     print()
     time.sleep(1)
     first_part()
-run_game()
-
+#run_game()
+restart_game()
