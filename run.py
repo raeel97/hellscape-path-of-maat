@@ -664,7 +664,6 @@ def run_game():
     print()
     time.sleep(1)
     first_part()
-#run_game()
-#sphinx()
-sphinx_riddle()
+run_game()
+
 
