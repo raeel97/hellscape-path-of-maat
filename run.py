@@ -1083,14 +1083,17 @@ def main_sphinx():
             final_choice = sphinx_choice_two.upper()
             if final_choice == "A":
                 sphinx_choice_two_one()
+                break
             elif final_choice == "B":
+                sphinx_choice_two_two()
                 break
             else:
                 time.sleep(2)
                 print()
                 print("Select A or B!")
                 print()
-    sphinx_choice_two_two()
+                continue
+    
 
     def sphinx_choice_two_one():
         print("""
@@ -1170,7 +1173,7 @@ def main_sphinx():
                     """)
                     time.sleep(3)
                     sphinx_death()
-                    brreak
+                    break
 
 
     def sphinx_final():
