@@ -2,6 +2,8 @@
 import time
 from datetime import datetime
 from ascii import intro, game_over 
+import random
+
    
 def get_name(): 
     while True:
@@ -41,8 +43,9 @@ def get_dob():
             continue
 def zodiac():
     global age
+    global zodiac_list
     dob = get_dob()
-    list = []
+    zodiac_list = []
     now = datetime.now()
     now_string = str(now)
     current_year = int(now_string[0:4])
@@ -51,54 +54,182 @@ def zodiac():
     year = dob[4:]
     age = current_year - int(year)
     if int(month) == 3 and int(day) <= 20:
-        list.append("Pisces")
+        zodiac_list.append("Pisces")
     elif int(month) == 3 and int(day) > 20:
-        list.append("Aries")
+        zodiac_list.append("Aries")
     elif int(month) == 4 and int(day) < 20:
-        list.append("Aries")
+        zodiac_list.append("Aries")
     elif int(month) == 4 and int(day) >= 20:
-        list.append("Taurus")
+        zodiac_list.append("Taurus")
     elif int(month) == 5 and int(day) <= 20:
-        list.append("Taurus")
+        zodiac_list.append("Taurus")
     elif int(month) == 5 and int(day) > 20:
-        list.append("Gemini")
+        zodiac_list.append("Gemini")
     elif int(month) == 6 and int(day) <= 21:
-        list.append("Gemini")
+        zodiac_list.append("Gemini")
     elif int(month) == 6 and int(day) >= 21:
-        list.append("Cancer")
+        zodiac_list.append("Cancer")
     elif int(month) == 7 and int(day) <= 22:
-        list.append("Cancer")
+        zodiac_list.append("Cancer")
     elif int(month) == 7 and int(day) >= 21:
-        list.append("Leo")
+        zodiac_list.append("Leo")
     elif int(month) == 8 and int(day) <= 20:
-        list.append("Leo")
+        zodiac_list.append("Leo")
     elif int(month) == 8 and int(day) >= 21:
-        list.append("Virgo")
+        zodiac_list.append("Virgo")
     elif int(month) == 9 and int(day) <= 22:
-        list.append("Virgo")
+        zodiac_list.append("Virgo")
     elif int(month) == 9 and int(day) >= 23:
         list.append("Libra")
     elif int(month) == 10 and int(day) <= 23:
-        list.append("Libra")
+        zodiac_list.append("Libra")
     elif int(month) == 10 and int(day) >= 23:
-        list.append("Scorpio")
+        zodiac_list.append("Scorpio")
     elif int(month) == 11 and int(day) <= 23:
         list.append("Scorpio")
     elif int(month) == 11 and int(day) >= 23:
         list.append("Sagittarius")
     elif int(month) == 12 and int(day) <= 21:
-        list.append("Sagittarius")
+        zodiac_list.append("Sagittarius")
     elif int(month) == 12 and int(day) >= 22:
-        list.append("Capricorn")
+        zodiac_list.append("Capricorn")
     elif int(month) == 1 and int(day) <= 19:
-        list.append("Capricorn")
+        zodiac_list.append("Capricorn")
     elif int(month) == 1 and int(day) >= 20:
-        list.append("Aquarius")
+        zodiac_list.append("Aquarius")
     elif int(month) == 2 and int(day) <= 18:
-        list.append("Aquarius")
+        zodiac_list.append("Aquarius")
     elif int(month) == 2 and int(day) >= 19:
-        list.append("Pisces")
-    return list 
+        zodiac_list.append("Pisces")
+    return list
+def zodiac_monster():
+    global demon_name
+
+    def capricorn():
+        demon_name = "Capricornus"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        Its head resembles a goat and its lower body resembles a fish. Its mad
+        eyes gaze at you in hostility!
+        """)
+        time.sleep(6)
+
+    def aquarius():
+        demon_name = "Aquaria"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        Its a large golem made from pale white stone, fashioned into the form 
+        of a man carrying a large vase filled with swamp water! 
+        """)
+        time.sleep(6)
+
+    def pisces():
+        demon_name = "Piscea"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        A large piscean humanoid figure stands before you, with balelful solid 
+        black eyes. Its skin is covered in dark grey scales, spikes potrude from 
+        its joints, its exaggerated mouth is filled with pike like teeth
+        and a fin mowhawk protrudes from its bald head. 
+        """)
+        time.sleep(10)
+
+    def aries():
+        demon_name = "Aries"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        A large man with the head of a ram stands before you, its fiery 
+        eyes staring at you hatefully as it pounds the ground with its hooves!
+        """)
+        time.sleep(8)
+
+    def taurus():
+        demon_name = "Taurai"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        A large man with the head of a bull stands before you, its fiery 
+        eyes staring at you hatefully as it pounds the ground with its hooves!
+        Its gleaming curved horns, holding the promise of violence. 
+        """)
+        time.sleep(8)
+
+    def gemini():
+        demon_name = "Geminitron"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        A naked two headed harpy stands before you. Each head stares at you 
+        hatefully. Its leathery wings flap in anger, its taloned feet scracth 
+        the ground
+        """)
+        time.sleep(8)
+
+    def cancer():
+        demon_name = "Canceria"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        An orange humanoid figure stands before you, its lower body resembles a 
+        crab and each one of its arms ends in powerful pincers that look as 
+        if they could crush rocks. It stares at with hard eyes!
+        """)
+        time.sleep(8)
+
+    def leo():
+        demon_name = "Leonidus"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        An infernal lion stands before you! Whereas the sphinx you faced before 
+        was calm and indifferent, this beast stares at you with unbrindled 
+        aggresion.
+        Its wild mane burns with hell fire and its glowing coal-like eyes stare 
+        at you with hate as its bares its black fangs at you. 
+        """)
+        time.sleep(9)
+
+    def virgo():
+        demon_name = "Virgo"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        It resembles a beautiful young girl that looks barely older than 13. 
+        Her eyes however are solid red and her long hair trails down to 
+        her knees in dark waves. Her skin is the color of a corpse. She smiles 
+        revealing sharklike teeth. 
+        """)
+        time.sleep(10)
+    
+    def libra():
+        demon_name = "Librenna"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        A golden one eyed, armless woman stands before you. Her torso has been 
+        impaled horizontally by a large golden pole. Each end sticks out where 
+        her arms would normally join her shoulders. Her mouth is missing lips to
+        reveal a mouthful of iron pins. From each end of the pole hangs a large 
+        flat bowl. She stares at you in anger, as if you were the one who 
+        subjected her to this cruel fate. 
+        """)
+        time.sleep(1)
+        
+    def scorpio():
+        demon_name = "Scorperia"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        An burgundy humanoid figure stands before you, its lower body resembles a 
+        scorpion and each one of its arms ends in powerful pincers that look as 
+        if they could crush rocks. It stares at with beetle like eyes!
+        """)
+        time.sleep(10)
+
+    def sagittarius():
+        demon_name = "Saggitar"
+        print("""
+        Before you stands your own personal demon, terror fills your soul. 
+        A horrifying centaur stands before you. The human part of its body 
+        resembles a powerfully built bald man with a long white beard. He 
+        carries a crude bow and on his back lies a quiver of barbed arrows. 
+        His eyes have been torn out, the black empty sockets still manage to 
+        stare you down in a predatory manner. 
+        """)
+        time.sleep(10)
 def restart_game():
     game_over()
     print()
@@ -288,7 +419,181 @@ def first_part():
             print()
             continue
     main_sphinx()
+def last_part():
+    time.sleep(4)
+    print("""
+    Emerging from the darkness, you find yourself in a large garden. 
+    The foilage is lush and vibrant, an odd contrast with the crimson storm 
+    raging in the distance. The garden is contained by thick 15 foot hedges, in
+    a box formation. 
+    """)
+    time.sleep(7)
+    print("""
+    In the centre of the garden, between two large willow trees is a stone 
+    with what looks like a sacrifical altar, stained a dark color that you 
+    can swear is from dried blood! 
+    """)
+    time.sleep(7)
+    print("""
+    But none of these things hold your attention for long. 
+    Your eyes are drawn to the other side of the garden, beyond the stone 
+    circle and willow trees.
+    """)
+    time.sleep(7)
+    print("""
+    Parallel to each other, in both corners of the garden, lies a stone arch and a 
+    spiral staircase respectively.
+    """)
+    time.sleep(5)
+    print("""
+    The staircase looks as if its been carved from the purest white marble in 
+    existence. Its so white that it almost glows in twilight of the perpetual 
+    storm. It looks as if it goes upwards forever, dissappearing into the thick
+    blood red clouds above the garden. The staircase fills you with hope!
+    Its clearly a way out of Erebus!
+    """)
+    time.sleep(10)
+    print("""
+    The stonearch on the other hand fills you with intense fear. Within it is
+    burn vortex of swirling fire that hurts if you stare at it for too long. 
+    The ancient stone its hewed from, pulsates with darkness.
+    """)
+    time.sleep(10)
+    print("A choice lies before you")
+    while True:
+        print("Do you:")
+        final_first_choice = input("""A - Make a dash for freedom \n B - Meekly make your way to the circle""")
+        final_first = final_first_choice.upper()
+        if final_first == "B":
+            final_meek()
+        elif final_first == "A":
+            final_run()
+        else:
+            print("I don't understand your choice?")
+            continue
     
+def final_run():
+    print("""
+    Naturally you make a run for the staircase, your bruised and battered
+    spirit body strains to make it to the staircase.
+    """)
+    time.sleep(6)
+    print("""
+    But just as you're about to reach the staircase, a powerful blow from out
+    of nowhere knocks you backwards.
+    """)
+    time.sleep(6)
+    print("""
+    Disorientated, you yelp as something grabs you by the scruff of your
+    neck and starts dragging you towards the stone dias.
+    """)
+    time.sleep(6)
+    print("""
+    Paralyzed with fear, your courage, depleted. You allow yourself to be
+    dragged towards whatever fate awaits you.
+    """)
+    time.sleep(6)
+    print("""
+    Whatever has ahold of you, finally deposits you before the altar
+    and then makes it way to the head of the stone circle.
+    I turns to face you!
+    """)
+    time.sleep(6)
+    if zodiac_list[0] == "Capricorn":
+        capricorn()
+        break
+    elif zodiac_list[0] == "Aquarius":
+        aquarius()
+        break
+    elif zodiac_list[0] == "Pisces":
+        pisces()
+        break
+    elif zodiac_list[0] == "Aries":
+        aries()
+        break
+    elif zodiac_list[0] == "Taurus":
+        taurus()
+        break
+    elif zodiac_list[0] == "Gemini":
+        gemini()
+        break
+    elif zodiac_list[0] == "Cancer":
+        cancer()
+        break
+    elif zodiac_list[0] == "Leo":
+        leo()
+        break
+    elif zodiac_list[0] == "Virgo":
+        virgo()
+        break
+    elif zodiac_list[0] == "Libra":
+        libra()
+        break
+    elif zodiac_list[0] == "Scorpio":
+        scorpio()
+        break
+    elif zodiac_list[0] == "Sagittarius":
+        sagittarius()
+        break
+    print(f"""
+        It declares "I am the demon {demon_name}, tremble before me mortal"
+        """)
+    time.sleep(5)
+    print(f"""
+        You stare at the demon {demon_name} in fear and ask "What do you want 
+        from me?"
+        """)
+    time.sleep(5)
+    print(f"""
+        {demon_name} shouts "You have come to the final trial of the path of 
+        maat, now you will answer a puzzle created by Maat herself. If you get 
+        this puzzle right, you will be allowed to ascend the staircase of 
+        redemption, if you get it wrong, you will be tossed through the 
+        hellgate where your soul will endure the worst of all hell torments."
+        """)
+    time.sleep(10)
+    print(f"""
+        {demon_name} bows its head. Before you on the altar, glowing letters 
+        appear. 
+        """)
+    time.sleep(5)
+    print("""
+        You realize its an anagram. 
+        """)
+    anagram()
+    time.sleep(5)
+    anagram_checker()
+    
+    
+def anagram_checker():
+    while True:
+        answer_list = []
+        print(f"The anagram before you is: {ana_gram}")
+        anagram_var = input("Solve the anagram\n")
+        anagram_answer = anagram_var.lower()
+        for a in answer_list:
+        if len(answer_list) <= 2:
+            if anagram_answer == anagram_correct:
+                win()
+                break
+            elif anagram_answer != anagram_correct:
+                answer_list.append(anagram_answer)
+                continue
+            else:
+
+def anagram():
+    global ana_gram
+    global anagram_correct
+    anagram_dict = {
+        "noitemperi": "redemption",
+        "ablutionso": "absolution",
+        "toxineraone": "exoneration"
+    }
+    ana_gram = random.choice(list(anagram_dict.keys()))
+    anagram_correct = anagram_dict.get(ana_gram,)
+
+
+
 def main_sphinx():
     def sphinx():
         """
@@ -554,13 +859,14 @@ def main_sphinx():
         then you turn and run as fast as you can.
         """)
         time.sleep(5)
-        vampire()
+        #vampire()
     sphinx()
 def vampire():
     print("""
     After wondering down a dark tunnel for what feels like an eternity, 
     you find yourself in a cold, creepy church
     """)
+def last_part():
 def run_game():
     intro()
     time.sleep(2)
@@ -569,4 +875,7 @@ def run_game():
     print()
     time.sleep(1)
     first_part()
-run_game()
+    last_part()
+
+#run_game()
+anagram()
