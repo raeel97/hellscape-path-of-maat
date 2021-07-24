@@ -877,5 +877,5 @@ def run_game():
     first_part()
     last_part()
 
-#run_game()
-anagram()
+run_game()
+
