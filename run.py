@@ -1414,4 +1414,5 @@ def run_game():
     last_part()
 
 
-run_game()
+#run_game()
+end_game()
