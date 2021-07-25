@@ -22,7 +22,7 @@ Hellscape, Path of Maat is a fictious interactive short novel of the religious h
 The back end of Hellscape: Path of Maat was created with python.<br>
 The logic chart can be viewed below: 
 
-<img src="images/hellscape_screenshot.JPG" alt="game intro" width="50%" height="50%">
+<img src="images/hellscape-project3.png" alt="game intro" width="50%" height="50%">
 
 
 <br>
