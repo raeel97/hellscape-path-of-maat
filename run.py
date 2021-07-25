@@ -225,12 +225,12 @@ def zodiac_monster():
 
     def virgo():
         global demon_name
-        demon_name = "Virgo"
+        demon_name = "Virgoth"
         print("""
         Before you stands your own personal demon, terror fills your soul.
         It resembles a beautiful young girl that looks barely older than 13.
-        Her eyes however are solid red and her long hair trails down to
-        her knees in dark waves. Her skin is the color of a corpse. She smiles
+        Its eyes however are solid red and its long hair trails down to
+        its knees in dark waves. Its skin is the color of a corpse. It smiles
         revealing sharklike teeth.
         """)
         time.sleep(10)
@@ -240,12 +240,12 @@ def zodiac_monster():
         demon_name = "Librenna"
         print("""
         Before you stands your own personal demon, terror fills your soul.
-        A golden one eyed, armless woman stands before you. Her torso has been
+        A golden one eyed, armless being stands before you. Its torso has been
         impaled horizontally by a large golden pole. Each end sticks out where
-        her arms would normally join her shoulders. Her mouth is missing lips
+        its arms would normally join its shoulders. Its mouth is missing lips
         revealing a mouthful of iron pins for teeth.
-        From each end of the poles hangs a large flat bowl. She stares at you
-        in anger, as if you were the one who subjected her to this cruel fate.
+        From each end of the poles hangs a large flat bowl. It stares at you
+        in anger, as if you were the one who subjected it to this cruel fate.
         """)
         time.sleep(1)
 
@@ -266,9 +266,9 @@ def zodiac_monster():
         print("""
         Before you stands your own personal demon, terror fills your soul.
         A horrifying centaur stands before you. The human part of its body
-        resembles a powerfully built bald man with a long white beard. He
+        resembles a powerfully built bald man with a long white beard. It
         carries a crude bow and on his back lies a quiver of barbed arrows.
-        His eyes have been torn out, the black empty sockets still manage to
+        Its eyes have been torn out, the black empty sockets still manage to
         stare you down in a predatory manner.
         """)
         time.sleep(10)
@@ -345,43 +345,44 @@ def first_part():
     """)
     time.sleep(4)
     print("""
-    The sky above you is an angry sooty crimson,casting a red haze everywhere
-    that meets the eye, but strangely enough the unbearable heat that feels
-    like its slowly roasting you alive comes not from the sky but from the
-    ground beneath you, you cannot locate the source of evil light that fills
-    the world around you.. Startled, you realize there is no sun in the sky.
+    The sky above you is an angry sooty crimson, casting a red haze everywhere
+    that meets the eye, your skin prickles at the intense heat of the world
+    around you but strangely enough the unbearable heat comes not from the sky
+    but from the ground beneath you.
+    Startled, you realize there is no sun in the sky, however you cannot locate
+    the source of evil light that illuminates everything around you...
     """)
     time.sleep(15)
     print("""
     The harsh winds that tear at your face smell of sulfur and decaying flesh,
-    they carry the sounds of inumerable agonized screams
+    they carry with them the sounds of inumerable agonized screams.
     """)
     time.sleep(7)
     print("""
-    The sound of large leathery wings flapping in the distance sends a
-    frightful shiver down your spine. A large thud sounds behind you.
-    You turn and find yourself face to face with none other than Nicholas Cage
-    himself.
-    Wearing a nicely tailored three piece suit, he surveys you with cool
-    indifference, his glittering evil eyes are the only thing that give away
-    his true demonic nature. That and the two large batlike wings that are
-    folding themselves away behind his back.
-    """)
-    time.sleep(20)
-    print(f"""
-    “Welcome to Erebus, {name}. In case it escaped your notice, I’m happy to
-    inform you that you are dead” he says, his mouth curling up in amusement.
-    He continued “I am Allecto, and my job is to punish you for the sins
-    you committed in the {age} years you roamed the mortal plane.
-    Your offenses are numerous, chief among them, the lies you spoke,
-    those crocs you wore when you thought no one was looking,
-    the animals that suffered for your nourishment, that candy bar you stole
-    in third grade…. ”
+    The sound of large wings flapping in the distance sends a
+    frightful shiver down your spine. A heavy thud echos behind you.
+    You turn and find yourself face to face with Nicholas Cage.
+    In shock, you take in his nicely tailored three piece suit, cold black
+    eyes, sharp white horns and two large batlike wings. Speechless, all you
+    can do is stare at demonic Nicholas Cage in shock.
     """)
     time.sleep(15)
+    print(f"""
+    “Welcome to Erebus, {name}. In case it escaped your notice, I’m happy to
+    inform you that you are dead” he says, his mouth curling up in cruel
+    amusement.
+    He continues “I am Allecto, Lord of Implacable Anger, and my job is to
+    punish you for the sins you committed in the {age} years you roamed the
+    mortal plane.
+    Your offenses are numerous, chief among them, the lies you spoke,
+    the crocs you wore when you thought no one was looking,
+    the animals that suffered for your nourishment, yes the vegans were right,
+    and worst of all that candy bar you stole in third grade…. ”
+    """)
+    time.sleep(20)
     print("""
     A bubble of panic forms in your chest, this is it, the moment every human
-    being fears deep deep down. The reckoning of all your mistakes.
+    being fears deep, deep down. The reckoning of all your mistakes.
     You think of your loved ones, you’ll never see them again.
     You have so many regrets.....
     """)
@@ -391,47 +392,51 @@ def first_part():
     to the dungeons of Erebus, located in Tartarus, however, I am presented
     with a dilemma. Most mortals that end up here have sufficiently blackened
     their souls to the point where redemption is impossible, your soul however,
-    as mediocre as the mortal thats attached to it, is salvageable.”
+    as mediocre as the mortal thats attached to it, can be redeemed.”
     """)
-    time.sleep(13)
+    time.sleep(15)
     print("""
     The bubble of panic in your chest is quickly replaced by a bubble of hope!
     """)
-    time.sleep(4)
+    time.sleep(5)
     print(f"""
     “You have a choice before you {name}, you can either spend an eternity
     wandering the endless fields of despair, a punishment created for the meek
-    and unremarkable, or you can choose the path of the goddess Maát and stand
+    and unremarkable, or you can choose the Path of the goddess Maat and stand
     a chance of redeeming yourself-”
     """)
     time.sleep(10)
     print("""
-    Emboldened by the prospect of a positive outcome, you interrupt and ask
-    “What would the path of Maat entail? And also, why do you look like
-    Nicholas Cage?”
+    Emboldened by the prospect of a positive outcome and unable to help
+    yourself, you interrupt and ask “What would the Path of Maat entail?
+    And also, why do you look like Nicholas Cage?”
     """)
     time.sleep(8)
     print("""
-    “SILENCE, MORTAL! I did not give you leave to speak!” Allecto snaps!
+    “SILENCE, MORTAL! I did not give you leave to speak!” Allecto roars!
     The ground rumbles beneath you rumbles at his displeasure,
     red lightning crackles in the distance.
     """)
     time.sleep(7)
     print("""
-    Straightening a hair that had fallen out of place, Allecto calmly
-    continues “Firstly, I don't look like Nicholas Cage, he looks like me!
-    Second and most importantly, the path of Maat is not an easy path.
+    Straightening a hair that has fallen out of place, Allecto calmly
+    continues “Firstly, I don't look like Nicholas Cage, your pathetic
+    mortal brain cannot comprehend my true form so it tries to make sense of
+    what it is seeing and it conjures the closest thing it can imagine!
+    Interesting choice...
+    Second and most importantly, the Path of Maat is not an easy path.
     You will be challenged and tested! If you fail any of the challenges,
-    you will subjected to realities of unbridled suffering that
+    you will subjected to realities of endless suffering that
     you cannot even begin to imagine”
     """)
-    time.sleep(15)
+    time.sleep(20)
     print("""
-    “The time for talking has come to an end! You must now choose!”
+    Impatient, he snaps “The time for talking has come to an end!
+    You must now choose!”
     """)
     time.sleep(3)
     print("""
-    “Will you walk the path of Maat or do you choose the fields of despair?”
+    “Will you walk the Path of Maat or do you choose the fields of despair?”
     """)
     time.sleep(3)
     while True:
@@ -440,9 +445,9 @@ def first_part():
         first_choice_upper = first_choice.upper()
         if first_choice_upper == "B":
             print("""
-            Allecto smiles maliciously at your choice. “You mortals
-            are so weak” he laughs, he then snaps his fingers and
-            everything goes black....
+            Allecto smiles maliciously at your choice. “You mortals are so
+            weak” he laughs, he then snaps his fingers and everything
+            goes black....
             """)
             time.sleep(6)
             print("""
@@ -477,10 +482,10 @@ def last_part():
     print("""
     Emerging from the darkness, you find yourself in a large garden.
     The foilage is lush and vibrant, an odd contrast with the crimson storm
-    raging in the distance. The garden is contained by thick 15 foot hedges, in
-    a box formation.
+    raging in the distance. The garden is contained by thick hedges standing
+    15 feet high in a box formation.
     """)
-    time.sleep(8)
+    time.sleep(10)
     print("""
     In the centre of the garden, between two large willow trees is a stone
     circle and within it is a sacrifical altar, stained a dark color that you
@@ -529,6 +534,7 @@ def last_part():
             time.sleep(2)
             print()
             print("I don't understand your choice?")
+            print()
             continue
 
 
@@ -570,7 +576,7 @@ def final_first_two():
     """)
     time.sleep(6)
     print("""
-    Whatever has ahold of you, deposits you before the altar and then makes it
+    Whatever has a hold of you, deposits you before the altar and then makes it
     way to the head of the stone circle.
     """)
     time.sleep(6)
@@ -592,10 +598,10 @@ def final_run():
         """)
     time.sleep(5)
     print(f"""
-        {demon_name} shouts "You have come to the final trial of the path of
-        maat, now you will answer a puzzle created by Maat herself. If you get
+        {demon_name} shouts "You have come to the final trial of the Path of
+        Maat, now you will answer a puzzle created by Maat herself. If you get
         this puzzle right, you will be allowed to ascend the staircase of
-        redemption, if you get it wrong, you will be tossed through the
+        {anagram_correct}, if you get it wrong, you will be tossed through the
         hellgate where your soul will endure the worst of all hell torments."
         """)
     time.sleep(14)
@@ -628,10 +634,11 @@ def final_monster_lose():
     def aquarius_lose():
         print(f"""
         {demon_name} moves suprisingly fast for a being made of rock!
-        {demon_name} grabs you with its crude hand. Its golem eyes burning with
-        mad excitement! It hits with you the vase knocking the air out of you.
-        Some of the water in the vase sloshes onto your arm, with a sizzling
-        sound the skin on your arm starts to melt off.
+        {demon_name} grabs you with one of its crude hands.
+        Its golem eyes burning with mad excitement! It hits with you the vase
+        knocking the air out of you. Some of the water in the vase sloshes onto
+        your arm, with a sizzling sound the skin on your arm starts
+        to melt off.
 
         You pass out.
         """)
@@ -639,12 +646,12 @@ def final_monster_lose():
 
     def pisces_lose():
         print(f"""
-        {demon_name} moves suprisingly fast for a aquatic being!
+        {demon_name} moves suprisingly fast for an aquatic being!
         {demon_name} grabs you with its webbed hands. Its large shark eyes
-        burning with mad excitement! It slashes you with its clawed webbed
-        hands several times before cracking your head against the ground.
-        You pass out.
+        burning with mad excitement! It slashes you with its claws several
+        times before bashing your head against the ground.
 
+        You pass out.
         """)
         time.sleep(13)
 
@@ -653,8 +660,8 @@ def final_monster_lose():
         {demon_name}'s cloven hooves carry it forward with immense speed!
         {demon_name} grabs you with its clawed hands. Its ram eyes
         burning with mad excitement! It slams its horns into your body knocking
-        you to the floor. Giving you barely any reprieve, it slams its hoof
-        into your head.
+        you to the floor.
+        Giving you barely any reprieve, it slams its hoof into your head.
 
         You pass out.
         """)
@@ -674,9 +681,9 @@ def final_monster_lose():
     def gemini_lose():
         print(f"""
         {demon_name} flaps its way towards you in the blink of an eye!
-        {demon_name} slashes at you with its talons. Its evil eyes
-        burning with mad excitement! It grabs you with its salons, carries you
-        10 feet into the air and forcibly throws yoy to the earth!
+        {demon_name} slashes at you with its talons. Its hawk eyes
+        burning with mad excitement! It grabs you with its talons, carries you
+        10 feet into the air and forcibly throws you to the earth!
 
         You pass out.
         """)
@@ -697,8 +704,8 @@ def final_monster_lose():
         print(f"""
         {demon_name} leaps towards you with an earth shattering roar!
         {demon_name} swipes as you with its clawed paws repeatedly, tearing
-        your body to ribbons of bloody flesh. Its fiery eyes burning  with mad
-        excitement! It slams its body into you knocking you into the ground.
+        your body to ribbons of bloody flesh. Its fiery eyes burning with mad
+        excitement! It slams its body into you knocking you to the ground.
 
         You pass out.
         """)
@@ -708,9 +715,9 @@ def final_monster_lose():
         print(f"""
         {demon_name} scuttles towards you on all fours, its pale form moving
         fast!
-        {demon_name} leaps ontop of you, slashing with its clawed hands with
-        suprising strength. You fall to your knee, screaming pain as it rips
-        your scalp off. It grabs your head and slams it into the ground
+        {demon_name} leaps on top of you, slashing with its clawed hands.
+        Surpised by its strength you fall to your knees, screaming in pain as
+        it rips your scalp off. It grabs your head and slams it into the ground
 
         You pass out.
         """)
@@ -718,7 +725,7 @@ def final_monster_lose():
 
     def libra_lose():
         print(f"""
-        {demon_name} runs towards you before you can react!
+        {demon_name} leaps towards you before you can react!
         {demon_name} it impales you on one end of the spike and then proceeds
         to repeatedly throw you against the ground!
 
@@ -741,7 +748,7 @@ def final_monster_lose():
         print(f"""
         {demon_name} shoots a spiked arrow into your knee before galloping
         towards you in a blur!
-        {demon_name} kicks you in the head with back leg.
+        {demon_name} kicks you in the head with its back leg.
 
         You pass out.
         """)
@@ -781,7 +788,7 @@ def final_lose():
         to the archway. You gaze in horror at the swirly fiery vortex
         contained within the archway. Its a portal that opens up above
         a lake of fire. Within the lake of fire, you see millions of
-        screaming people writhining in agony. Pleading for relief that
+        screaming people writhining in agony, pleading for relief that
         will never come.
         """)
     time.sleep(10)
@@ -831,9 +838,6 @@ def final_lose():
 
 
 def win_game():
-    demon_name = "Satan"
-    name = "rae"
-    anagram_correct = "redemption"
     print(f"""
     {demon_name} stares at you in shock!
     """)
@@ -861,7 +865,7 @@ def win_game():
     """)
     time.sleep(13)
     print(f"""
-    The goddess Maat continues "By my word I restore youu and I give you leave
+    The goddess Maat continues "By my word I restore you and I give you leave
     to ascend the staircase of {anagram_correct}"
     """)
     time.sleep(6)
@@ -954,26 +958,26 @@ def main_sphinx():
         print()
         print("""
         Allecto raises his eyebrows!!\n
-        Whether this is because he is impressed or not, is not clear.
-        With an imperceptible wave of his hand, he sends you hurtling
-        through darkness…
+        Whether this is because he is impressed or not, is not clear. With an
+        dismissive wave of his hand, he sends you hurtling through darkness…
         """)
         time.sleep(5)
         print()
         print("""
-        You open your eyes and find yourself on the one side of a dimly
-        lit rectangular room.
+        You open your eyes and find yourself on the one side of a dimly lit
+        rectangular room.
         """)
         time.sleep(5)
         print()
         print("""
-        You survey the room and notice many broken vases and ornaments
-        and lots of nondescript furniture that had seen better days.
+        You survey the room and notice many broken vases, ornaments and lots
+        of nondescript furniture that has seen better days.
         """)
         time.sleep(5)
         print()
         print("""
-        There also seems to be a lot of pale yellow sand in the room.
+        Looking down you observe that there also seems to be a lot of pale
+        yellow sand in the room.
         """)
         time.sleep(3)
         print()
@@ -1008,15 +1012,16 @@ def main_sphinx():
             else:
                 time.sleep(2)
                 print()
+                print("I don't understand")
                 print("Select A or B!")
                 print()
 
     def sphinx_choice_one_one():
         time.sleep(3)
         print("""
-        You make your way to a large worn cabinet, as you open
-        the cabinet door, you scream as hundreds of scarab beetles
-        swarm up the wall like a black cloud.
+        You make your way to a large aged cabinet, as you open the cabinet
+        door, you scream as hundreds of large scarab beetles the size of
+        tarantulas, swarm up the wall behind it like a black cloud.
         """)
         time.sleep(5)
         print("""
@@ -1025,27 +1030,27 @@ def main_sphinx():
         sphinx_choice_one_two()
 
     def sphinx_choice_one_two():
-        time.sleep(3)
+        time.sleep(5)
         print("""
         You rush towards the large stone door. Once there you frantically
         start searcing for a lever or a switch of some kind!
         """)
-        time.sleep(3)
+        time.sleep(5)
         print("""
         Suddenly a horrible smells fills the room and the hairs on your neck
         prickle up
         """)
-        time.sleep(3)
+        time.sleep(5)
         print("""
-        You turn and find yourself face to face with the
-        strangest creature you have ever laid eyes on.
-        Their face is beautiful in a genderless androgynous
-        way, with slitted dark eyes, high cheekbones and golden
-        skin. Atop their head rests a large striped headdress
-        that would have even the most ostentatious pharaoh
-        jealous. From the neck down, you see a powerfully built
-        leonine body resting gracefully on the floor. Each one of
-        its paws is bigger than your head.
+        You turn and find yourself face to face with the strangest creature
+        you have ever laid eyes on, a sphinx!
+        Its androgynous face is beautiful, with proud heavily kholed
+        blue eyes, high cheekbones and golden skin.
+        Atop its head rests a large striped headdress that would have made
+        even the wealthiest Pharaoh jealous, in its centre, above the sphinxes
+        brow rests the living head of a king cobra attached to the headdress.
+        From the neck down, you see a powerfully built leonine body resting
+        gracefully on the floor. Each one of its paws bigger than your head.
         """)
         time.sleep(13)
         print("""
@@ -1057,6 +1062,10 @@ def main_sphinx():
 
     def sphinx_death():
         print("""
+        The king cobra head spits venom into your eyes, making you scream.
+        """)
+        time.sleep(7)
+        print("""
         The sphinx lunges forward and knocks you backward. She lands on your
         chest crushing your windpipe and ribs beneath her weight.
         """)
@@ -1064,17 +1073,17 @@ def main_sphinx():
         print("""
         Choking on your blood you see her head splitting open horizonatally
         from the edges of her mouth to her ears, your realize that shes opening
-        her mouth to reveal rows of razor sharp teeth.
+        her horrifyingly wide mouth to reveal rows of razor sharp teeth.
         """)
         time.sleep(7)
         print("""
         As you scream, all you hear is the sound of your blood gurgling, wetly,
-         in back of your throat. She strikes forward like a snake.
+        in back of your throat. She strikes forward and starts devouring you.
         """)
         time.sleep(7)
         print("""
         With dawning horror, you realize because you are already dead, there is
-        no end to this.
+        no end to this as your body heals as quickly as its damaged.
         You pray to god to save you but you spend the rest of eternity being
         torn open and toyed with by the sphinx.
         """)
@@ -1082,7 +1091,7 @@ def main_sphinx():
         restart_game()
 
     def sphinx_choice_two():
-        time.sleep(3)
+        time.sleep(5)
         while True:
             print("What do you do?")
             sphinx_choice_two = input("""
@@ -1099,6 +1108,7 @@ def main_sphinx():
             else:
                 time.sleep(2)
                 print()
+                print("I don't understand")
                 print("Select A or B!")
                 print()
                 continue
@@ -1131,12 +1141,12 @@ def main_sphinx():
         """)
         time.sleep(5)
         print("""
-        You nod, frozen in fear.
+        You nod, frozen in fear. You ask “What now?”
         """)
         time.sleep(5)
         print("""
-        The sphinx continues “Answer my riddle correctly and you may move along
-        the path of the goddess Maat”
+        The sphinx continues “Answer my riddle correctly and you may move
+        along the path of the goddess Maat”
         """)
         time.sleep(5)
         print("""
@@ -1204,8 +1214,8 @@ def main_sphinx():
         print("""
         The sphinx nods and wishes you well, the smallest hint of regret
         in its voice.
-        It informs you, that you may continue your journey along the path of
-        maat.
+        It informs you, that you may continue your journey along the Path of
+        Maat.
         """)
         time.sleep(5)
         print("""
