@@ -349,7 +349,7 @@ def first_part():
     that meets the eye, your skin prickles at the intense heat of the world
     around you but strangely enough the unbearable heat comes not from the sky
     but from the ground beneath you.
-    Startled, you realize there is no sun in the sky, however you cannot 
+    Startled, you realize there is no sun in the sky, however you cannot
     locate the source of evil light that illuminates everything around you...
     """)
     time.sleep(15)
@@ -602,8 +602,9 @@ def final_run():
         {demon_name} shouts "You have come to the final trial of the Path of
         Maat, now you will answer a puzzle created by Maat herself. If you get
         this puzzle right, you will be allowed to ascend the staircase of
-        {anagram_correct}, if you get it wrong, you will be tossed through the
-        hellgate where your soul will endure the worst of all hell torments."
+        and find redemeption, if you get it wrong, you will be tossed through
+        the hellgate where your soul will endure the worst of all hell
+        torments."
         """)
     time.sleep(14)
     print(f"""
@@ -868,7 +869,7 @@ def win_game():
     time.sleep(13)
     print(f"""
     The goddess Maat continues "By my word I restore you and I give you leave
-    to ascend the staircase of {anagram_correct}"
+    to ascend the staircase and find redemption"
     """)
     time.sleep(6)
     print("""
