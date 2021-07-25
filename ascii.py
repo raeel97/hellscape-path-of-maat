@@ -7,7 +7,7 @@ def intro():
     statements. The intro function also requests user name and date of birth!
     """
     print("""
-    All code written and compiled by Raevynna El Messaoudi
+            Storyline and Code by Raevynna El Messaoudi
     """)
     print()
     print("█𓂀█☥████☥████☥████☥████☥████☥███☥████☥████☥████☥████☥████☥████☥█𓂀█")
