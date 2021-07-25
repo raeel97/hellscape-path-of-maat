@@ -24,26 +24,50 @@ def get_dob():
     Gets date of birth and checks if date of birth is in the correct format. 
     """
     print("Answer in the following format:DDMMYYYY")
+    lo = "Please provide your date of birth in the following format:\nDDMMYYYY"
     time.sleep(1)
     print()
     while True:
         dob = input("Whats your date of birth?\n")
         if len(dob) == 8 and dob.isnumeric() == True:
-            return dob
-            break
-        else: 
+            if int(dob[0:2]) <= 31 and int(dob[2:4]) <= 12:
+                if int(dob[4:]) > 1910 and int(dob[4:]) < 2008:
+                    return dob
+                    break
+                else:
+                    print()
+                    time.sleep(2)
+                    print("Incorrect year")
+                    print()
+                    time.sleep(2)
+                    print(lo)
+                    time.sleep(2)
+                    print()
+                    continue
+            else:
+                print()
+                time.sleep(2)
+                print("Incorrect day/month format")
+                print()
+                time.sleep(2)
+                print(lo)
+                time.sleep(2)
+                print()
+                continue
+        else:
             print()
             time.sleep(2)
             print("Incorrect format")
             print()
             time.sleep(2)
-            print("Please provide your date of birth in the following format: \nDDMMYYYY")
+            print(lo)
             time.sleep(2)
             print()
             continue
 def zodiac():
     global age
     global zodiac_list
+    global current_year
     dob = get_dob()
     zodiac_list = []
     now = datetime.now()
