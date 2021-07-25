@@ -867,7 +867,7 @@ def win_game():
     You are no longer a hellbound spirit"
     """)
     time.sleep(13)
-    print(f"""
+    print("""
     The goddess Maat continues "By my word I restore you and I give you leave
     to ascend the staircase and find redemption"
     """)
