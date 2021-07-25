@@ -54,7 +54,7 @@ Majority of testing was done by myself using print statements. I also followed t
 
 <h3>Validator Testing</h3>
 
-Python was validated using [PEP8 online](http://pep8online.com/checkresult) to ensure code is pep8 compliant. 
+Python was validated using [PEP8 online](http://pep8online.com/) to ensure code is pep8 compliant. 
 
  PEP8 online report
   ![Alt text](images/pep8.JPG)
@@ -101,7 +101,7 @@ The website was deployed to github pages through the following steps:
 
 </ul>
 
-<h2 id="credit1">Credits</h2> 
+<h2 id="credit">Credits</h2> 
 <h3 id="credit2">Code</h3>
 <ul>
 <li>Most of the code was utilized from lessons given by the Code Institute</li>
