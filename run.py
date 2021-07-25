@@ -349,8 +349,8 @@ def first_part():
     that meets the eye, your skin prickles at the intense heat of the world
     around you but strangely enough the unbearable heat comes not from the sky
     but from the ground beneath you.
-    Startled, you realize there is no sun in the sky, however you cannot locate
-    the source of evil light that illuminates everything around you...
+    Startled, you realize there is no sun in the sky, however you cannot 
+    locate the source of evil light that illuminates everything around you...
     """)
     time.sleep(15)
     print("""
@@ -391,7 +391,7 @@ def first_part():
     Allecto interrupts your panicked thoughts “Usually my job is to escort you
     to the dungeons of Erebus, located in Tartarus, however, I am presented
     with a dilemma. Most mortals that end up here have sufficiently blackened
-    their souls to the point where redemption is impossible, your soul however,
+    their souls to the point where redemption is impossible, your soul however
     as mediocre as the mortal thats attached to it, can be redeemed.”
     """)
     time.sleep(15)
@@ -506,9 +506,10 @@ def last_part():
     print("""
     The staircase looks as if its been carved from the purest white marble in
     existence. Its so white that it almost glows in the twilight of the
-    perpetual storm that rages above in the sky. It looks as if it goes upwards
-    forever, dissappearing into the thick blood red clouds above the garden.
-    The staircase fills you with hope! Its clearly a way out of Erebus!
+    perpetual storm that rages above in the sky. It looks as if it goes
+    upwards forever, dissappearing into the thick blood red clouds above the
+    garden. The staircase fills you with hope!
+    Its clearly a way out of Erebus!
     """)
     time.sleep(10)
     print("""
@@ -576,8 +577,8 @@ def final_first_two():
     """)
     time.sleep(6)
     print("""
-    Whatever has a hold of you, deposits you before the altar and then makes it
-    way to the head of the stone circle.
+    Whatever has a hold of you, deposits you before the altar and then
+    makes its way to the head of the stone circle.
     """)
     time.sleep(6)
     print("""
@@ -636,8 +637,8 @@ def final_monster_lose():
         {demon_name} moves suprisingly fast for a being made of rock!
         {demon_name} grabs you with one of its crude hands.
         Its golem eyes burning with mad excitement! It hits with you the vase
-        knocking the air out of you. Some of the water in the vase sloshes onto
-        your arm, with a sizzling sound the skin on your arm starts
+        knocking the air out of you. Some of the water in the vase sloshes
+        onto your arm, with a sizzling sound the skin on your arm starts
         to melt off.
 
         You pass out.
@@ -659,8 +660,8 @@ def final_monster_lose():
         print(f"""
         {demon_name}'s cloven hooves carry it forward with immense speed!
         {demon_name} grabs you with its clawed hands. Its ram eyes
-        burning with mad excitement! It slams its horns into your body knocking
-        you to the floor.
+        burning with mad excitement! It slams its horns into your body
+        knocking you to the floor.
         Giving you barely any reprieve, it slams its hoof into your head.
 
         You pass out.
@@ -717,7 +718,8 @@ def final_monster_lose():
         fast!
         {demon_name} leaps on top of you, slashing with its clawed hands.
         Surpised by its strength you fall to your knees, screaming in pain as
-        it rips your scalp off. It grabs your head and slams it into the ground
+        it rips your scalp off. It grabs your head and slams it into the
+        ground
 
         You pass out.
         """)
@@ -1072,19 +1074,22 @@ def main_sphinx():
         time.sleep(7)
         print("""
         Choking on your blood you see her head splitting open horizonatally
-        from the edges of her mouth to her ears, your realize that shes opening
-        her horrifyingly wide mouth to reveal rows of razor sharp teeth.
+        from the edges of her mouth to her ears, your realize that shes
+        opening her horrifyingly wide mouth to reveal rows of
+        razor sharp teeth.
         """)
         time.sleep(7)
         print("""
-        As you scream, all you hear is the sound of your blood gurgling, wetly,
-        in back of your throat. She strikes forward and starts devouring you.
+        As you scream, all you hear is the sound of your blood gurgling,
+        wetly, in back of your throat. She strikes forward and
+        starts devouring you.
         """)
         time.sleep(7)
         print("""
-        With dawning horror, you realize because you are already dead, there is
-        no end to this as your body heals as quickly as its damaged.
-        You pray to god to save you but you spend the rest of eternity being
+        With dawning horror, you realize because you are already dead,
+        there is no end to this as your body knits itself back together
+        as quickly as its damaged.
+        You pray to be saved but instead you spend the rest of eternity being
         torn open and toyed with by the sphinx.
         """)
         time.sleep(12)
