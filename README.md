@@ -5,14 +5,14 @@
 <a href=https://hellscape-path-of-maat.herokuapp.com>Live Site</a>
 
 ## Tabel of contents
-<a href="#overview1">1) Intro</a><br>
+<a href="#intro">1) Intro</a><br>
 <a href="#tech">2) Technologies Used</a><br>
-<a href="#test1">3) Testing</a><br>
+<a href="#testing">3) Testing</a><br>
 <a href="#deployment">4) Deployment</a><br>
-<a href="#deployment">5) Bugs</a><br>
-<a href="#credit1">6) Credits</a><br>
+<a href="#bugs">5) Bugs</a><br>
+<a href="#credit">6) Credits</a><br>
 
-<h2 id="overview1">Intro</h2>
+<h2 id="intro">Intro</h2>
 
 Hellscape, Path of Maat is a fictious interactive short novel of the religious horror/adventure genre played in a text based terminal.
 
@@ -27,7 +27,7 @@ The logic chart can be viewed below:
 
 <br>
 <h2 id="tech">Technologies Used</h2>
-<h3 id="tech1">Languages Used</h3>
+<h3>Languages Used</h3>
 <ul>
 <li>Python</li>
 </ul>
@@ -44,15 +44,15 @@ The logic chart can be viewed below:
 </ul>
 
 
-<h2 id="test1">Testing</h2>
+<h2 id="testing">Testing</h2>
 
-<h3 id="test2">Lighthouse Testing</h3>
+<h3>Lighthouse Testing</h3>
 Majority of testing was done by myself using print statements. I also followed the path of the game down every possible combination to make sure I achieved desired output.<br><br>
 
  
 
 
-<h3 id="test3">Validator Testing</h3>
+<h3>Validator Testing</h3>
 
 Python was validated using [PEP8 online](http://pep8online.com/checkresult) to ensure code is pep8 compliant. 
 
@@ -94,6 +94,13 @@ The website was deployed to github pages through the following steps:
 
 
 <a href="https://www.heroku.com/" target="_blank">Heroku</a> will now deploy the site automatically and update any changes pushed to the Github repository main branch.
+
+<h2 id="bugs">Bugs</h2> 
+<ul>
+<li>The print functions dont always print fast or slow enough for the content to be read, some users might find this frustrating. A proposed fix would be to hold the print functions until the user presses enter.</li>
+
+</ul>
+
 <h2 id="credit1">Credits</h2> 
 <h3 id="credit2">Code</h3>
 <ul>
