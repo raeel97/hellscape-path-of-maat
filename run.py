@@ -5,6 +5,9 @@ import random
 
 
 def get_name():
+    """
+    Requests the users name to be used throughout the story
+    """
     while True:
         global name
         player_name = input("What's your name?:\n")
@@ -68,6 +71,11 @@ def get_dob():
 
 
 def zodiac():
+    """
+    Takes users date of birth as a string, slices where needed and converts
+    day, month and year into integers. Uses date of birth to get users
+    astrological zodiac sign to be used later in the app.
+    """
     global age
     global zodiac_list
     global current_year
@@ -132,9 +140,18 @@ def zodiac():
 
 
 def zodiac_monster():
+    """
+    Once the fifth choice has taken place and the relevant function has
+    run, this function runs. It holds the functions for each end boss demon
+    thats computed from the users astrology sign. The final run function
+    runs at the end of this function.
+    """
     global demon_name
 
     def capricorn():
+        """
+        Assigns the user the Capricornus demon
+        """
         global demon_name
         demon_name = "Capricornus"
         print("""
@@ -145,6 +162,9 @@ def zodiac_monster():
         time.sleep(6)
 
     def aquarius():
+        """
+        Assigns the user the Aquaria demon
+        """
         global demon_name
         demon_name = "Aquaria"
         print("""
@@ -156,6 +176,9 @@ def zodiac_monster():
         time.sleep(6)
 
     def pisces():
+        """
+        Assigns the user the Piscea demon
+        """
         global demon_name
         demon_name = "Piscea"
         print("""
@@ -168,6 +191,9 @@ def zodiac_monster():
         time.sleep(10)
 
     def aries():
+        """
+        Assigns the user the Aries demon
+        """
         global demon_name
         demon_name = "Aries"
         print("""
@@ -178,6 +204,9 @@ def zodiac_monster():
         time.sleep(8)
 
     def taurus():
+        """
+        Assigns the user the Taurai demon
+        """
         global demon_name
         demon_name = "Taurai"
         print("""
@@ -189,6 +218,9 @@ def zodiac_monster():
         time.sleep(8)
 
     def gemini():
+        """
+        Assigns the user the Geminitron demon
+        """
         global demon_name
         demon_name = "Geminitron"
         print("""
@@ -200,6 +232,9 @@ def zodiac_monster():
         time.sleep(8)
 
     def cancer():
+        """
+        Assigns the user the Canceria demon
+        """
         global demon_name
         demon_name = "Canceria"
         print("""
@@ -211,6 +246,9 @@ def zodiac_monster():
         time.sleep(8)
 
     def leo():
+        """
+        Assigns the user the Leonidus demon
+        """
         global demon_name
         demon_name = "Leonidus"
         print("""
@@ -224,6 +262,9 @@ def zodiac_monster():
         time.sleep(9)
 
     def virgo():
+        """
+        Assigns the user the Virgoth demon
+        """
         global demon_name
         demon_name = "Virgoth"
         print("""
@@ -236,6 +277,9 @@ def zodiac_monster():
         time.sleep(10)
 
     def libra():
+        """
+        Assigns the user the Librenna demon
+        """
         global demon_name
         demon_name = "Librenna"
         print("""
@@ -250,6 +294,9 @@ def zodiac_monster():
         time.sleep(1)
 
     def scorpio():
+        """
+        Assigns the user the Scorperia demon
+        """
         global demon_name
         demon_name = "Scorperia"
         print("""
@@ -261,6 +308,9 @@ def zodiac_monster():
         time.sleep(10)
 
     def sagittarius():
+        """
+        Assigns the user the Saggitar demon
+        """
         global demon_name
         demon_name = "Saggitar"
         print("""
@@ -300,6 +350,12 @@ def zodiac_monster():
 
 
 def restart_game():
+    """
+    Prints the ascii art for game over and asks the user if they want to
+    try again. If the user opts to try again, the main run_game function
+    is run, if they opt for no, they're thanked for playing and the game
+    ends
+    """
     game_over()
     print()
     while True:
@@ -330,6 +386,11 @@ def restart_game():
 
 
 def get_user_data():
+    """
+    Main user data function which first gets the users name, then gets the
+    users age and the users zodiac sign. The user is then thanked and
+    told to have fun.
+    """
     get_name()
     print()
     time.sleep(2)
@@ -340,6 +401,12 @@ def get_user_data():
 
 
 def first_part():
+    """
+    First part of story line takes place. And then first choice happens.
+    Once user selects the choice, the appropriate function takes place and
+    more storyline takes place. If they dont lose, they loop back to this
+    function and the sphinx function is called.
+    """
     print("""
     You wake to find yourself in a desolate wasteland.
     """)
@@ -478,6 +545,11 @@ def first_part():
 
 
 def last_part():
+    """
+    Final part of story line takes place. And then the fifth and sixth
+    choices take place. The fifth choice leads to the same outcome. The sixth
+    choice will either lead to the win function or the restart function.
+    """
     time.sleep(3)
     print("""
     Emerging from the darkness, you find yourself in a large garden.
@@ -540,6 +612,10 @@ def last_part():
 
 
 def final_first_one():
+    """
+    If the second option of the 5th choice is taken, this function will run
+    and then the zodiac monster function will run.
+    """
     time.sleep(3)
     print("""
     You are bruised and broken. Any courage you had, is long gone.
@@ -556,6 +632,10 @@ def final_first_one():
 
 
 def final_first_two():
+    """
+    If the first option of the 5th choice is taken, this function will run
+    and then the zodiac monster function will run.
+    """
     print("""
     Naturally you make a run for the staircase, your bruised and battered
     body slowing you down.
@@ -588,6 +668,11 @@ def final_first_two():
 
 
 def final_run():
+    """
+    After the zodiac monster function is done running, this function will run.
+    This function runs the anagram function and then the anagram checker
+    function
+    """
     time.sleep(4)
     print(f"""
         It declares "I am the demon {demon_name}, tremble before me mortal"
@@ -621,6 +706,11 @@ def final_run():
 
 
 def final_monster_lose():
+    """
+    This function holds all the zodiac monster description functions that run
+    if the user gets the sixth choice wrong. The function checks to see which
+    zodiac sign the users has and then it runs the final lose function
+    """
     def capricorn_lose():
         print(f"""
         {demon_name} front goat legs and fish tail help it to reach you faster
@@ -785,6 +875,10 @@ def final_monster_lose():
 
 
 def final_lose():
+    """
+    This function is the final lose function. After it has run, it calls
+    the restart function.
+    """
     time.sleep(5)
     print(f"""
         You awaken to find {demon_name} has dragged your battered body
@@ -841,6 +935,11 @@ def final_lose():
 
 
 def win_game():
+    """
+    If the user gets the sixth choice right, this function runs. The endgame
+    function is called at the end. And then the user has the option to play
+    again.
+    """
     print(f"""
     {demon_name} stares at you in shock!
     """)
@@ -919,6 +1018,10 @@ def win_game():
 
 
 def anagram_checker():
+    """
+    This function shows the user the sixth choice and it loops to check if the
+    anagram answer is correct.
+    """
     answer_list = []
     while True:
         print(f"The anagram before you is: {ana_gram}")
@@ -942,6 +1045,11 @@ def anagram_checker():
 
 
 def anagram():
+    """
+    This function holds the three random anagrams and their answers in a
+    dictionairy and then gets a random anagram and its answer and makes them
+    into global variables.
+    """
     global ana_gram
     global anagram_correct
     anagram_dict = {
@@ -954,9 +1062,14 @@ def anagram():
 
 
 def main_sphinx():
+    """
+    Main function that holds all the sphinx functions. Calls the sphinx
+    function.
+    """
     def sphinx():
         """
-        Main sphinx function
+        Carries on from the first part function and leads the first choice
+        function
         """
         print()
         print("""
@@ -999,6 +1112,12 @@ def main_sphinx():
         sphinx_choice_one()
 
     def sphinx_choice_one():
+        """
+        Presents the user with the first choice. Depending on the users choice
+        either the sphinx choice one one function is run or the sphinx choice
+        one two function is run. It also checks to make sure the users input
+        is the right format answer.
+        """
         while True:
             print("What do you do?")
             sphinx_choice_one = input("""
@@ -1020,6 +1139,10 @@ def main_sphinx():
                 print()
 
     def sphinx_choice_one_one():
+        """
+        Additional dialogue that takes place after the sphinx_choice_one
+        function and ends with the sphinx choice one two function.
+        """
         time.sleep(3)
         print("""
         You make your way to a large aged cabinet, as you open the cabinet
@@ -1033,6 +1156,10 @@ def main_sphinx():
         sphinx_choice_one_two()
 
     def sphinx_choice_one_two():
+        """
+        Additional dialogue that takes place after the sphinx_choice_one
+        function and leads to the sphinx choice two function.
+        """
         time.sleep(5)
         print("""
         You rush towards the large stone door. Once there you frantically
@@ -1064,6 +1191,10 @@ def main_sphinx():
         sphinx_choice_two()
 
     def sphinx_death():
+        """
+        If the user gets the riddle wrong enough times, this function is
+        called and then the restart game function is called.
+        """
         print("""
         The king cobra head spits venom into your eyes, making you scream.
         """)
@@ -1097,6 +1228,11 @@ def main_sphinx():
         restart_game()
 
     def sphinx_choice_two():
+        """
+        Presents the user with the 3rd choice and runs either sphinx one two
+        one function or the sphinx one two two function. Also displays an
+        error message if the wrong input takes place.
+        """
         time.sleep(5)
         while True:
             print("What do you do?")
@@ -1120,12 +1256,16 @@ def main_sphinx():
                 continue
 
     def sphinx_choice_two_one():
+        """
+        The function thats called if the user selects A and it ends with the
+        sphinx death function.
+        """
         print("""
         You quickly grab the spear before the sphinx has time to react.
         """)
         time.sleep(5)
         print("""
-        With a warcry that reeks of fear, you rush forward, aiming for the
+        With a war cry that reeks of fear, you rush forward, aiming for the
         heart!
         """)
         time.sleep(5)
@@ -1136,6 +1276,10 @@ def main_sphinx():
         sphinx_death()
 
     def sphinx_choice_two_two():
+        """
+        The function thats called if the user selects B and it ends with the
+        sphinx riddle function.
+        """
         print("""
         Shaking like a leaf, your voice cracks as you ask
         “Do you speak English?”
@@ -1166,6 +1310,15 @@ def main_sphinx():
         sphinx_riddle()
 
     def sphinx_riddle():
+        """
+        The function that presents the user with choice 3 which is a riddle
+        with three possible answers of which only one is correct. Each time
+        the user answers incorrectly, the answerr is appended to an empty list
+        Once the list has 3 values the sphinx death function takes place.
+        If the user gets the answer correct before there are three values
+        in the list, the sphinx final function is called and the loop is
+        broken.
+        """
         global riddle
         global riddle_answer
         riddle_answer = "your word"
@@ -1201,6 +1354,9 @@ def main_sphinx():
                     break
 
     def sphinx_final():
+        """
+        The function contains dialogue then finishes.
+        """
         time.sleep(5)
         print("""
         The sphinx stares at you. In its eyes you can detect the smallest
@@ -1233,6 +1389,10 @@ def main_sphinx():
 
 
 def vampire():
+    """
+    Level two function that is not called. When I have enough time I will
+    expand on the story and introduce more levels
+    """
     print("""
     After wondering down a dark tunnel for what feels like an eternity,
     you find yourself in a cold, creepy church
@@ -1240,6 +1400,10 @@ def vampire():
 
 
 def run_game():
+    """
+    Main function that contains all the essential functions for the game and
+    runs them in a specific order.
+    """
     intro()
     time.sleep(2)
     print()
