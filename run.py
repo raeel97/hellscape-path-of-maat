@@ -586,7 +586,7 @@ def last_part():
     time.sleep(10)
     print("""
     The archway on the other hand fills you with intense fear. Within it a
-    vortex of swirling fire burns, so much so it that hurts if you stare at it
+    vortex of swirling fire burns, so much so that it hurts if you stare at it
     for too long. The ancient stone its hewed from, pulsates with darkness.
     """)
     time.sleep(8)
@@ -1147,9 +1147,9 @@ def main_sphinx():
         print("""
         You make your way to a large aged cabinet, as you open the cabinet
         door, you scream as hundreds of large scarab beetles the size of
-        tarantulas, swarm up the wall behind it like a black cloud.
+        tarantulas swarm up the wall behind the cabinet like a black cloud.
         """)
-        time.sleep(5)
+        time.sleep(8)
         print("""
         You jump back in horror and decide to escape this horrible room!
         """)
@@ -1167,7 +1167,7 @@ def main_sphinx():
         """)
         time.sleep(5)
         print("""
-        Suddenly a horrible smells fills the room and the hairs on your neck
+        Suddenly a horrible smell fills the room and the hairs on your neck
         prickle up
         """)
         time.sleep(5)
@@ -1180,7 +1180,7 @@ def main_sphinx():
         even the wealthiest Pharaoh jealous, in its centre, above the sphinxes
         brow rests the living head of a king cobra attached to the headdress.
         From the neck down, you see a powerfully built leonine body resting
-        gracefully on the floor. Each one of its paws bigger than your head.
+        gracefully on the floor, each one of its paws bigger than your head.
         """)
         time.sleep(13)
         print("""
