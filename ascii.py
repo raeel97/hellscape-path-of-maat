@@ -71,8 +71,8 @@ def intro():
     print("█𓂀█☥████☥████☥████☥████☥████☥███☥████☥████☥████☥████☥████☥████☥█𓂀█")
     print()
     print("""
-            Please wait until each message has finished loading before
-            pressing any keys
+    Please wait until each message has finished loading before
+    pressing any keys
     """)
     time.sleep(3)
 
