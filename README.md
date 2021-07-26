@@ -98,6 +98,9 @@ The website was deployed to github pages through the following steps:
 <h2 id="bugs">Bugs</h2> 
 <ul>
 <li>The print functions dont always print fast or slow enough for the content to be read, some users might find this frustrating. A proposed fix would be to hold the print functions until the user presses enter.</li>
+<li>The print statements tend to be slightly out of place depending on how they are nestled. 
+A proposed fix would be to store the story content in a txt file and retrieve each paragraph as needed.
+This would decrease the size of the file and it would improve user experience.</li>
 
 </ul>
 
